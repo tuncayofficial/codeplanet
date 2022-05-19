@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SciencePlanet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tags.css">
+</head>
+<body>
+    <%- include('./blocks/navbar.ejs') -%>
+    <div class="slogan" align = "center">
+        SciencePlanet. Get all fresh science news.
+    </div>
+
+    <div class="card">
+       <div class = "title">
+           Lorem Ipsum
+       </div>
+       <div class = "body">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+       </div>
+       <br>
+       <button>Read article</button>
+    </div>
+
+    <div class="message1" align = "center">
+      Explore more articles and forums.
+    </div>
+
+    <div class = "tags">
+        <div class = "tag">#mathematics</div>
+        <div class = "tag">#biology</div>
+        <div class = "tag">#history</div>
+        <div class = "tag">#science</div>
+        <div class = "tag">#physics</div>
+        <div class = "tag">#politics</div>
+        <div class = "tag">#philosophy</div>
+    </div>
+
+    <div class = "feed" align = "center">
+            <h1 class = "slogan">Reach all conference news from our communities!</h1>
+        <div class = "lists">
+            <div class = "list" id="reddit">Our Reddit Community</div>
+            <div class = "list" id="github">Our GitHub Organization</div>
+            <div class = "list" id="twitter">Our Twitter Page</div>
+            <div class = "list" id="instagram">Our Instagram Page</div>
+            <div class = "list" id="discord">Our Discord Server</div>
+        </div>
+    </div>
+    <br>
+    <div class="email-notify" align = "center">
+        <h1 class="slogan">Enter your e-mail for to receive last articles!</h1>
+        <form action="/email-notify" type = "POST" class="notify">
+            <h1 style = "color: white; font-size: 30px;">Newspaper Center</h1>
+          <input name = "email-notify" placeholder="Enter e-mail"><br>
+          <button>Submit</button>
+        </form>
+    </div>
+    <br>
+    <div class="latest" align = "center">
+        <h1 class="slogan">Latest articles</h1>
+        <div class="card2-container">
+        <div class="card2">
+            <div class = "title">
+                Lorem Ipsum
+            </div>
+            <div class = "body">
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut arite cillum dolore eu fugiat nulla pariatur.
+            </div>
+            <br>
+            <button>Read article</button>
+         </div>
+         <div class="card2">
+            <div class = "title">
+                Lorem Ipsum
+            </div>
+            <div class = "body">
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut arite cillum dolore eu fugiat nulla pariatur.
+            </div>
+            <br>
+            <button>Read article</button>
+         </div>
+         <div class="card2">
+            <div class = "title">
+                Lorem Ipsum
+            </div>
+            <div class = "body">
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut arite cillum dolore eu fugiat nulla pariatur.
+            </div>
+            <br>
+            <button>Read article</button>
+         </div>
+      </div>
+    </div>
+</body>
+<style>
+
+    .notify {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        height: 300px;
+        background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );
+        border-radius: 8px;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    .notify input {
+        margin: 18px;
+    }
+     
+     .list {
+         cursor: pointer;
+         transition: 300ms all;
+         position: relative;
+     }
+
+     .list:hover {
+         transform: scale(1.08);
+     }
+
+    .card2 {
+        background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );
+        color: white;
+        width: 350px;
+        height: 380px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 30px;
+        padding: 15px;
+        border-radius: 8px;
+        margin: auto auto;
+        margin-top: 40px;
+    }
+    
+    .card2 .title { 
+        font-size: 30px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .card2-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .lists .list {
+        margin: 10px;
+        padding: 15px;
+        background-color: orange;
+        width: 550px;
+        border-radius: 9px;
+    }
+
+    .slogan, .message1{
+        font-size: 33px;
+        margin-top: 30px;
+    }
+
+    .card {
+        background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );
+        color: white;
+        width: 600px;
+        height: 350px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 30px;
+        padding: 15px;
+        border-radius: 8px;
+        margin: auto auto;
+        margin-top: 40px;
+    }
+
+    .card .title { 
+        font-size: 30px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+</style>
+</html>

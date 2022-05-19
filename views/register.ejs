@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SciencePlanet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <%- include('./blocks/navbar.ejs') -%>
+    <div class = "register" align="center">
+        <form action = "/registerPost" method = "POST">
+            <h1 style="color: white;">Register to SciencePlanet</h1>
+            <input placeholder="Username" type="text" name="username">
+            <input placeholder="E-mail" type="email" name="email">
+            <input placeholder="Password" type="password" name="password">
+            <input placeholder="Re-enter password" type="password" name="repassword">
+            <button>Register</button>
+        </form>
+    </div>
+</body>
+<style>
+
+.register {
+   margin: auto auto;
+   width: 600px;
+   height: 550px;
+   background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   flex-direction: column;
+   border-radius: 10px;
+}
+
+.register form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+.register form h1 {
+    font-size: 33px;
+}
+
+.register form button {
+    background-color: #2d0396;
+    width: 430px;
+    height: 55px;
+    color: white;
+    margin-top: 10px;
+    padding: 15px;
+}
+
+.register form input {
+        width: 400px;
+        margin: 10px;
+}
+    
+</style>
+</html>

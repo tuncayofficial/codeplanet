@@ -1,0 +1,44 @@
+.tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: 3;
+    justify-content: center;
+    align-items: center;
+}
+
+.tags .tag {
+    margin: 15px;
+    background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 300ms all;
+}
+
+.tag:hover {
+    transform: scale(1.07);
+}
+
+#reddit {
+    background-color: #FF4500;
+  }
+  
+  #github {
+      background-color: #171515;
+      color: white;
+  }
+  
+  #twitter {
+      background-color: #00acee;
+  }
+  
+  #instagram {
+      background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  }
+  
+  #discord {
+      background-color: #5865F2;
+  }
