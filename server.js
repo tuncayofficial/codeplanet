@@ -25,4 +25,4 @@ app.use("/users", users)
 app.use("/register",register)
 app.use("/registerPost", registerPost)
 
-const listener = app.listen(6060, () => console.log("Server started and listening in localhost:6060"))
+const listener = app.listen(3169, () => console.log("Server started and listening in localhost:6060"))
