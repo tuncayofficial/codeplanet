@@ -11,7 +11,6 @@ app.use(express.static("public"));
 app.set("view engine","ejs");
 app.use(express.urlencoded({ extended : true }))
 dotenv.config;
-mongoose.connect(key);
 
 // Routers
 const register = require("./routers/get/register");
