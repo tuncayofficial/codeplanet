@@ -11,6 +11,13 @@
     <%- include('./blocks/navbar.ejs') -%>
     <div class = "register" align="center">
         <form action = "/registerPost" method = "POST">
+            <% if(errors.length > 0){ %>
+            <% errors.forEach(error =>{%>
+            <div class = "error">
+                <%= error.message %> 
+            </div>
+            <% }) %>
+            <% } %>
             <h1 style="color: white;">Register to SciencePlanet</h1>
             <input placeholder="Username" type="text" name="username">
             <input placeholder="E-mail" type="email" name="email">
