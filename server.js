@@ -26,3 +26,5 @@ app.use("/register",register)
 app.use("/registerPost", registerPost)
 
 const listener = app.listen(3000, () => console.log("Server started and listening in localhost:3000"))
+
+module.exports = app;
